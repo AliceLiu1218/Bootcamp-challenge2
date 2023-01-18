@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgb(160, 55, 134);
+    color:antiquewhite
+}
+.header h1{
+    margin: 2% 0;
+    font-size: 30px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+.header li{
+    font-size:15px;
+    color:blanchedalmond;
+}
+
+/*display the background for text content, where gives in <h2> tag*/
+.image{
+    background: url("./images/canned-coffee.jpg");
+    background-size:cover;
+    min-height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+.image h2{
+    font-size: 50px;
+    color: white;
+}
+
+
+/*set up a container leave the space on both left and right margin area first*/
+.container{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*set up the flexbox container*/
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+/*layout thr container as 20% for title part and 80% for content part*/
+.titles{
+    flex: 0 0 20%;
+    border-right: 3px solid orangered;
+    font-size: 50px;
+    word-wrap:break-word;
+}
+.content{
+    flex: 0 0 80%;
+    font-size: 10px;
+}
+/*style all p tags inside class content*/
+.content >p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:15px;
+    text-align:center
+}
+/*set up the container to flex the images as two columns displaying*/
+.Workimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:15px;
+}
+.leftpic{
+    flex: 0 0 50%;
+}
+.rightpic{
+    flex: 0 0 50%;
+}
+/*Background image for h3 tags*/
+.Backimg{
+    background: url("./images/cookie-tin.jpg");
+    background-size:cover;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+.Backimg:hover{
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px blueviolet;
+    transition: width 2s linear;
+}
+.Workimg h3{
+    font-size: 30px;
+    color: white;
+}
+
+
+/*similar to section part2(work),set up the flexbos and flex direction in row*/
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.links{
+    flex: 0 0 15%;
+    font-size: 15px;
+    color:brown
+}
+.links:hover{
+    text-shadow: 2px 2px 5px red;
+}
